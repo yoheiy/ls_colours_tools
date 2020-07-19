@@ -1,0 +1,127 @@
+DIR  #06f
+LINK #6ff
+EXEC #6c3
+ORPHAN 48;5;161
+
+*README   #fc9
+*Makefile #fc9
+
+# source
+.c   #fc0
+.cc  #fc0
+.cpp #fc0
+.d   #fc0
+.h   #fc0
+.hs  #fc0
+.lhs #fc0
+.go  #fc0
+.l   #fc0
+.nim #fc0
+.rs  #fc0
+.s   #fc0
+.v   #fc0
+.pas #fc0
+.bas #fc0
+
+# binary object
+.o   #360
+.so  #360
+.pyo #360
+.pyc #360
+.bin #360
+.dtb #360
+
+# scripts
+.pl  #c90
+.pm  #c90
+.ps  #c90
+.py  #c90
+.sh  #c90
+
+# patch
+.patch #93c
+.diff  #93c
+
+# archive / package
+.a   #f39
+.tar #f39
+.tar.gz #f39
+.tar.bz2 #f39
+.tar.xz #f39
+.tgz #f39
+.deb #c03
+
+# image
+.png  #f9c
+.jpeg #f9c
+
+.pbm #f6f
+.pgm #f6f
+.ppm #f6f
+.xbm #f6f
+.xpm #f6f
+
+# text
+.md  #9cf
+.rst #9cf
+.txt #9cf
+.tex #9cf
+
+# text data
+.dts #c90
+
+.bdf #3c6
+.eps #3c6
+.pov #3c6
+.svg #3c6
+.mf  #3c6
+
+# log
+.log  #63c
+.pcap #63c
+
+# intermediate
+.aux #369
+
+# generic
+.json #cf6
+.toml #cf6
+.xml  #cf6
+.yaml #cf6
+.yml  #cf6
+
+# binary document
+.pdf  #6c0
+.djvu #6c0
+.dvi  #6c0
+
+# web
+.html #903
+.css  #903
+.js   #903
+.cgi  #903
+.wsgi #903
+
+# other
+.csv   #936
+.ini   #936
+.gif   #936
+.ico   #936
+.doc   #936
+.docx  #936
+.xls   #936
+.xlsx  #936
+.ppt   #936
+.pptx  #936
+.apk   #936
+.dex   #936
+.java  #936
+.scala #936
+.class #936
+.jar   #936
+.pub   #936
+.gpg   #936
+.lua   #936
+.vala  #936
+.rb    #936
+.tcl   #936

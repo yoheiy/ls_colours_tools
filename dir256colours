@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if [ $# = 0 ]
+then
+  dircolors
+  exit
+elif [ "x$1" = x-p ]
+then
+  dircolors -p
+  exit
+fi
+
+cat "$1" |
+perl -wl -pe '
+sub f {
+$_ = $_[0];
+tr/0369cf/012345/;
+s/(.)(.)(.)/$1 $2 $3/;
+@a = split;
+return "38;5;" . ($a[0] * 36 + $a [1] * 6 + $a[2] + 16);
+}
+s/#([0-9a-f]{3})/f($1)/e' |
+dircolors -

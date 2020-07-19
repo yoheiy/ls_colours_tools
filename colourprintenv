@@ -1,0 +1,32 @@
+e=$(printf '\033')
+
+# echo "$e[38;5;216mTEST$e[m"
+
+if [ $# = 0 ]
+then
+  printenv
+else
+  for i in "$@"
+  do
+    echo $i=$(printenv "$i")
+  done
+fi |
+while read l
+do
+  case $l in
+  LS_COLORS=*)
+    echo "$l" |
+    tr : '\n' |
+    sed '1s/[^=]*=//; /^$/d' |
+    awk -F= '{printf "\033[%sm%s\033[m=%s:", $2, $1, $2}' |
+    sed 's/^/LS_COLORS=/; s/$/\n/'
+    ;;
+  PATH=*)
+    echo "$l" |
+    sed 's/:/:\n ... /g'
+    ;;
+  *)
+    echo "$l" ;;
+  esac |
+  sed "s/\([^=]*\)=/$e[38;5;216m\1$e[38;5;130m=$e[m/"
+done
