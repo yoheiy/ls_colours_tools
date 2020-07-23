@@ -3,7 +3,7 @@ dir256colours is a wrapper for the dircolors.
 To set `LS_COLORS`:
 
 ```
-$ dir256colours sample.in
+$ eval $(dir256colours sample.in)
 ```
 
 To set `LS_COLORS` and show sample output:
