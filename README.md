@@ -16,3 +16,5 @@ $ ls --color test
 
 colourprintenv is a wrapper for the printenv.
 It shows each element of `LS_COLORS` in its colour.
+
+Note that sample colour is suitable for dark background.
